@@ -1,0 +1,18 @@
+{
+  "app_name": "skiservice",
+  "services": [
+    {
+      "service_name": "webserver",
+      "components": [
+        {
+          "component_name": "nginx",
+          "image": "registry.giantswarm.io/marian/skiservice:latest",
+          "ports": [80],
+          "domains": {
+          	"www.skiservice-aschaffenburg.de": 80
+          }
+        }
+      ]
+    }
+  ]
+}
